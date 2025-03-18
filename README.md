@@ -56,6 +56,6 @@ A notable observation is that the 25 most confidently classified images often co
 
 # Installation &amp; Setup
 1. Clone the Repository
-2. Download the CIFAR-10 Dataset from https://www.cs.toronto.edu/%7Ekriz/cifar.html
+2. Download the dogs and frogs CIFAR-10 Dataset from https://www.cs.toronto.edu/%7Ekriz/cifar.html
 3. Execute the code found in classifiers.py
 
