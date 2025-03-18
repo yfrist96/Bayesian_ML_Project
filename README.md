@@ -8,7 +8,9 @@ where we have a prior over the mean:
 ![image](https://github.com/user-attachments/assets/96ded2c1-2927-4bd2-891c-01671d1239f3).
 Using the posterior ![image](https://github.com/user-attachments/assets/618fa4a6-a850-4f5a-ac5c-dccdf8cfcb03) I found the Minimum Mean Squared Error (MMSE) estimate and have plotted the mean decision boundry ![image](https://github.com/user-attachments/assets/83f7fe0c-428c-427d-849f-a51dcae17b05).
 
-![image](https://github.com/user-attachments/assets/fe25d3d7-4f83-47c2-90b3-0b928d7f63b5)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/fe25d3d7-4f83-47c2-90b3-0b928d7f63b5" width="500">
+</div>
 
 # Generative Classification of Images
 I implemented QDA to create a generative classifier for images. To do this, I fit a multivariate Gaussian to each class of images independently and then compared the likelihoods to classify them.
@@ -20,7 +22,9 @@ For each class (dogs and frogs), I fit a Gaussian distribution and used the foll
 
 Below is the plot of the accuracy of QDA as a function of v:
 
-![image](https://github.com/user-attachments/assets/50345fe7-77e7-46c2-b23c-9942ee6661e0)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/50345fe7-77e7-46c2-b23c-9942ee6661e0" width="500">
+</div>
 
 # Discriminative Classification of Images
 I used a Bayesian Linear Regression model to classify images using the "classification as regression" method. To achieve this, I labeled the regression targets as ±1:
@@ -38,11 +42,15 @@ The basis functions I used were Gaussian basis functions, with centers defined b
 
 I then trained the model with M basis functions from each class and plotted the training and test accuracy as a function of M. The test accuracy when using all the training data as basis functions (M = all) is 0.88.
 
-![image](https://github.com/user-attachments/assets/bfb8af1f-8916-43c7-85cd-0e5086d146bf)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/bfb8af1f-8916-43c7-85cd-0e5086d146bf" width="500">
+</div>
 
 Finally, I plotted the 25 dog images that the model was most and least confident in classifying.
 
-![image](https://github.com/user-attachments/assets/72416798-2c7b-4c40-bf5e-0ebf55304345)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/72416798-2c7b-4c40-bf5e-0ebf55304345" width="500">
+</div>
 
 A notable observation is that the 25 most confidently classified images often contain a dog with white fur, and the dog is clearly distinguished from the background.
 
